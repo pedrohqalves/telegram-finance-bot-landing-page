@@ -9,7 +9,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/telegram-finance-bot-landing-page/', // ← necessário para GitHub Pages
   plugins: [
     react(),
     mode === 'development' &&
