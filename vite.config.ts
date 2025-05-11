@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: 'telegram-finance-bot-landing-page',
+  base: '/telegram-finance-bot-landing-page/',
   plugins: [
     react(),
     mode === 'development' &&
