@@ -21,7 +21,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="section bg-gray-50">
+    <section id="benefits" className="section bg-gray-50 pb-32">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher o <span className="gradient-text">UnoBot</span>?</h2>
