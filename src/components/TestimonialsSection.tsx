@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
       position: "Profissional autônoma",
       image: "https://randomuser.me/api/portraits/women/12.jpg",
       rating: 5,
-      text: "O FinBot mudou completamente como eu gerencio minhas finanças. Consigo facilmente acompanhar meus gastos e receitas, e as dicas personalizadas já me ajudaram a economizar muito dinheiro.",
+      text: "O UnoBot mudou completamente como eu gerencio minhas finanças. Consigo facilmente acompanhar meus gastos e receitas, e as dicas personalizadas já me ajudaram a economizar muito dinheiro.",
     },
     {
       name: "Carlos Eduardo",
@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
       position: "Estudante universitária",
       image: "https://randomuser.me/api/portraits/women/65.jpg",
       rating: 5,
-      text: "Como estudante, preciso controlar bem meu orçamento limitado. O FinBot me ajuda a organizar meus gastos e a estabelecer metas de economia. Recomendo para todos os estudantes!",
+      text: "Como estudante, preciso controlar bem meu orçamento limitado. O UnoBot me ajuda a organizar meus gastos e a estabelecer metas de economia. Recomendo para todos os estudantes!",
     },
     {
       name: "Ricardo Mendes",
@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
             O que nossos <span className="gradient-text">clientes</span> dizem
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Descubra como o FinBot está ajudando milhares de pessoas a transformar sua relação com o dinheiro
+            Descubra como o UnoBot está ajudando milhares de pessoas a transformar sua relação com o dinheiro
           </p>
         </div>
 
