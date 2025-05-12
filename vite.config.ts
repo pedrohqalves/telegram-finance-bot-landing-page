@@ -9,7 +9,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/telegram-finance-bot-landing-page/',
   plugins: [
     react(),
     mode === 'development' &&
@@ -19,9 +18,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
   },
 }));
