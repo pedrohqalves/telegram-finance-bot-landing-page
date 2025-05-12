@@ -49,8 +49,8 @@ const BenefitsSection = () => {
         <div className="mt-16 bg-finance-dark rounded-2xl p-8 text-white">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-2/3 mb-6 md:mb-0">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Tudo em um só lugar</h3>
-              <p className="text-white/90 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Tudo em um só lugar</h3>
+              <p className="text-white mb-6 opacity-90">
                 Unifique o controle das suas finanças em um único assistente inteligente, acessível diretamente pelo Telegram.
               </p>
               <ul className="space-y-3">
@@ -61,22 +61,22 @@ const BenefitsSection = () => {
                   "Defina metas de economia e acompanhe seu progresso"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
-                    <div className="mr-3 bg-white/20 rounded-full p-1">
+                    <div className="mr-3 bg-white/30 rounded-full p-1">
                       <Check className="h-4 w-4" />
                     </div>
-                    {item}
+                    <span className="text-white font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="md:w-1/3 flex justify-center">
               <div className="relative">
-                <div className="w-64 h-64 bg-white/10 rounded-full absolute -top-5 -left-5 animate-pulse"></div>
-                <div className="w-56 h-56 bg-white/20 rounded-full relative z-10 flex items-center justify-center">
-                  <span className="text-5xl font-bold">100%</span>
+                <div className="w-64 h-64 bg-white/20 rounded-full absolute -top-5 -left-5"></div>
+                <div className="w-56 h-56 bg-white/30 rounded-full relative z-10 flex items-center justify-center">
+                  <span className="text-5xl font-bold text-white">100%</span>
                 </div>
                 <div className="absolute bottom-0 text-center w-full">
-                  <span className="bg-white/20 px-4 py-1 rounded-full text-sm">Satisfação dos usuários</span>
+                  <span className="bg-white/30 px-4 py-1 rounded-full text-sm font-medium text-white">Satisfação dos usuários</span>
                 </div>
               </div>
             </div>
