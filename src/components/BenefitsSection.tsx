@@ -24,7 +24,7 @@ const BenefitsSection = () => {
     <section id="benefits" className="section bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher o <span className="gradient-text">FinBot</span>?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher o <span className="gradient-text">UnoBot</span>?</h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Nosso assistente financeiro inteligente traz uma nova maneira de gerenciar suas finanças, 
             com foco na simplicidade e eficiência.
@@ -46,7 +46,7 @@ const BenefitsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-finance-primary to-finance-accent rounded-2xl p-8 text-white">
+        <div className="mt-16 bg-finance-dark rounded-2xl p-8 text-white">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-2/3 mb-6 md:mb-0">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Tudo em um só lugar</h3>

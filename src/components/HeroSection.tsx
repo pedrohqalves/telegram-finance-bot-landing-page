@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Bot, ChartLine, Wallet } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
@@ -17,22 +18,29 @@ const HeroSection = () => {
             <p className="text-gray-600 text-lg mb-8 max-w-lg">
               Controle suas finanças de forma simples e eficiente com nosso bot de IA que analisa, organiza e otimiza seus gastos e receitas automaticamente.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div>
               <Button size="lg" className="bg-finance-primary hover:bg-finance-secondary text-white px-8 py-6 rounded-lg text-lg">
-                Começar Grátis <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-finance-primary text-finance-primary hover:bg-finance-light px-8 py-6 rounded-lg text-lg">
-                Ver Demonstração
+                Começar Agora <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
             <div className="mt-8 flex items-center gap-3">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div 
-                    key={i} 
-                    className={`w-10 h-10 rounded-full border-2 border-white bg-gray-${i * 100}`} 
-                  />
-                ))}
+              <div className="flex -space-x-3">
+                <Avatar className="border-2 border-white">
+                  <AvatarImage src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4Mzc1MzAyMQ&ixlib=rb-4.0.3&q=80&w=40" alt="User 1" />
+                  <AvatarFallback>U1</AvatarFallback>
+                </Avatar>
+                <Avatar className="border-2 border-white">
+                  <AvatarImage src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4Mzc1MzAyMQ&ixlib=rb-4.0.3&q=80&w=40" alt="User 2" />
+                  <AvatarFallback>U2</AvatarFallback>
+                </Avatar>
+                <Avatar className="border-2 border-white">
+                  <AvatarImage src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4Mzc1MzAyMQ&ixlib=rb-4.0.3&q=80&w=40" alt="User 3" />
+                  <AvatarFallback>U3</AvatarFallback>
+                </Avatar>
+                <Avatar className="border-2 border-white">
+                  <AvatarImage src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4Mzc1MzAyMQ&ixlib=rb-4.0.3&q=80&w=40" alt="User 4" />
+                  <AvatarFallback>U4</AvatarFallback>
+                </Avatar>
               </div>
               <div className="text-sm text-gray-600">
                 <strong>1,000+</strong> usuários ativos
@@ -49,7 +57,7 @@ const HeroSection = () => {
                       <Bot className="text-white" size={20} />
                     </div>
                     <div>
-                      <p className="font-bold">FinBot</p>
+                      <p className="font-bold">UnoBot</p>
                       <p className="text-xs text-gray-500">Assistente financeiro</p>
                     </div>
                   </div>

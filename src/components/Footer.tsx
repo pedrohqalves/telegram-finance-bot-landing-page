@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto py-12 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1 md:col-span-1">
             <div className="mb-4">
-              <span className="text-white font-bold text-xl">Fin<span className="text-finance-accent">Bot</span></span>
+              <span className="text-white font-bold text-xl">Uno<span className="text-finance-accent">Bot</span></span>
             </div>
             <p className="mb-4 text-sm text-gray-400">
               Seu assistente financeiro inteligente que ajuda a controlar gastos e organizar suas finanças através do Telegram.
@@ -35,15 +35,6 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-4">Produtos</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">FinBot Pessoal</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FinBot Empresarial</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">API de Integração</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Relatórios Financeiros</a></li>
-            </ul>
-          </div>
-          <div>
             <h3 className="text-white font-semibold mb-4">Recursos</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
@@ -57,7 +48,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 text-gray-400" />
-                <span>contato@finbot.com.br</span>
+                <span>contato@unobot.com.br</span>
               </div>
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 text-gray-400" />
@@ -71,7 +62,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm flex flex-col md:flex-row justify-between items-center">
-          <p>© 2025 FinBot. Todos os direitos reservados.</p>
+          <p>© 2025 UnoBot. Todos os direitos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Termos de Serviço</a>
             <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
