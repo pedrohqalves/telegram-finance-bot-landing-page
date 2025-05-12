@@ -66,7 +66,7 @@ const FeaturesSection = () => {
           <div className="bg-finance-light rounded-2xl overflow-hidden">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-finance-dark">Como funciona o FinBot</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-finance-dark">Como funciona o UnoBot</h3>
                 <p className="text-gray-700 mb-6">
                   Nosso assistente financeiro utiliza inteligência artificial avançada para analisar seus dados e oferecer 
                   orientações personalizadas sobre como gerenciar melhor seu dinheiro.
@@ -96,7 +96,7 @@ const FeaturesSection = () => {
                     <div className="p-4 border-b">
                       <div className="flex items-center">
                         <Bot className="h-8 w-8 text-finance-primary mr-2" />
-                        <span className="font-bold">FinBot</span>
+                        <span className="font-bold">UnoBot</span>
                       </div>
                     </div>
                     <div className="p-4 space-y-3">
