@@ -1,5 +1,6 @@
 
-import { Check, Coins, Wallet, ChartLine } from "lucide-react";
+import { Check, Coins, Wallet, ChartLine, AlertCircle, FileText, Target } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const BenefitsSection = () => {
   const benefits = [
@@ -18,6 +19,29 @@ const BenefitsSection = () => {
       title: "Economize mais",
       description: "Receba dicas personalizadas de economia e veja seu dinheiro render mais com sugestões de corte de gastos."
     },
+  ];
+
+  const allInOneFeatures = [
+    {
+      icon: <Check className="h-5 w-5 text-white" />,
+      text: "Cadastre suas receitas e despesas com simples mensagens",
+      bgColor: "bg-finance-primary"
+    },
+    {
+      icon: <AlertCircle className="h-5 w-5 text-white" />,
+      text: "Receba alertas de contas a pagar",
+      bgColor: "bg-finance-secondary"
+    },
+    {
+      icon: <FileText className="h-5 w-5 text-white" />,
+      text: "Consulte seus relatórios financeiros a qualquer momento",
+      bgColor: "bg-finance-accent"
+    },
+    {
+      icon: <Target className="h-5 w-5 text-white" />,
+      text: "Defina metas de economia e acompanhe seu progresso",
+      bgColor: "bg-finance-dark"
+    }
   ];
 
   return (
@@ -46,38 +70,41 @@ const BenefitsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-finance-dark rounded-2xl p-8 text-white">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="md:w-2/3 mb-6 md:mb-0">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Tudo em um só lugar</h3>
-              <p className="text-white mb-6 opacity-90">
-                Unifique o controle das suas finanças em um único assistente inteligente, acessível diretamente pelo Telegram.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Cadastre suas receitas e despesas com simples mensagens",
-                  "Receba alertas de contas a pagar",
-                  "Consulte seus relatórios financeiros a qualquer momento",
-                  "Defina metas de economia e acompanhe seu progresso"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center">
-                    <div className="mr-3 bg-white/30 rounded-full p-1">
-                      <Check className="h-4 w-4" />
-                    </div>
-                    <span className="text-white font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="md:w-1/3 flex justify-center">
+        <div className="mt-16">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Tudo em um só lugar</h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Unifique o controle das suas finanças em um único assistente inteligente, acessível diretamente pelo Telegram.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {allInOneFeatures.map((feature, index) => (
+              <Card 
+                key={index} 
+                className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className={`h-2 ${feature.bgColor}`}></div>
+                <CardContent className="p-6">
+                  <div className={`w-12 h-12 rounded-full ${feature.bgColor} flex items-center justify-center mb-4`}>
+                    {feature.icon}
+                  </div>
+                  <p className="font-medium">{feature.text}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <div className="bg-white p-6 rounded-xl shadow-lg flex items-center gap-8 max-w-md">
               <div className="relative">
-                <div className="w-64 h-64 bg-white/20 rounded-full absolute -top-5 -left-5"></div>
-                <div className="w-56 h-56 bg-white/30 rounded-full relative z-10 flex items-center justify-center">
-                  <span className="text-5xl font-bold text-white">100%</span>
+                <div className="w-36 h-36 bg-gradient-to-br from-finance-primary to-finance-accent rounded-full flex items-center justify-center">
+                  <span className="text-4xl font-bold text-white">100%</span>
                 </div>
-                <div className="absolute bottom-0 text-center w-full">
-                  <span className="bg-white/30 px-4 py-1 rounded-full text-sm font-medium text-white">Satisfação dos usuários</span>
-                </div>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-2">Satisfação garantida</h4>
+                <p className="text-gray-600">Nossos usuários aprovam e recomendam o UnoBot para gerenciar finanças.</p>
               </div>
             </div>
           </div>
