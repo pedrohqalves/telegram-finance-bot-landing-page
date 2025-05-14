@@ -45,32 +45,36 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="section bg-gray-50 pb-32">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher o <span className="gradient-text">UnoBot</span>?</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            Nosso assistente financeiro inteligente traz uma nova maneira de gerenciar suas finanças, 
-            com foco na simplicidade e eficiência.
-          </p>
-        </div>
+    <>
+      <section id="benefits" className="section bg-gray-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Por que escolher o <span className="gradient-text">UnoBot</span>?</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Nosso assistente financeiro inteligente traz uma nova maneira de gerenciar suas finanças, 
+              com foco na simplicidade e eficiência.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="mb-4 p-3 bg-finance-light inline-block rounded-lg">
-                {benefit.icon}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => (
+              <div 
+                key={index} 
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="mb-4 p-3 bg-finance-light inline-block rounded-lg">
+                  {benefit.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
+                <p className="text-gray-600">{benefit.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-
-        <div className="mt-16">
+      </section>
+      
+      <section className="section bg-white">
+        <div className="container mx-auto">
           <div className="text-center mb-10">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Tudo em um só lugar</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -109,8 +113,8 @@ const BenefitsSection = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
